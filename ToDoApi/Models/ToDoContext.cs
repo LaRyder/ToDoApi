@@ -11,7 +11,8 @@ namespace ToDoApi.Models
         public ToDoContext(DbContextOptions<ToDoContext> options)
                 : base(options)
         {
-
+           // services.AddDbContext<ToDoContext>(options =>
+               // options.UseInMemoryDatabase("ToDoList"));
         }
 
         public DbSet<ToDoItem> ToDoItems { get; set; }
